@@ -14,6 +14,11 @@ namespace XFXCalendarPluginSample
         {
             InitializeComponent();
         }
+
+        private void CalendarView_DateSelectionChanged(object sender, EventArgs arg)
+        {
+            DisplayAlert("Date Changed", calendar.SelectedDate.ToString(), "OK");
+        }
     }
 }
 
